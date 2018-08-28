@@ -27,7 +27,7 @@ public class FragmentAtRun5 extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    private  EditText editText;
+    private  EditText editTextOnFifthFrag;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -77,12 +77,12 @@ public class FragmentAtRun5 extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.fragment_fragment_at_run5, container, false);
-        editText = (EditText)view.findViewById(R.id.editTextInFifthhFrag);
+        editTextOnFifthFrag = (EditText)view.findViewById(R.id.editTextInFifthhFrag);
         Button button =(Button)view.findViewById(R.id.buttonInFifthFrag);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String message = editText.getText().toString();
+                String message = editTextOnFifthFrag.getText().toString();
                 listener.onMessageRead(message);
 
             }
@@ -108,7 +108,7 @@ public class FragmentAtRun5 extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-       editText.setText("");
+       editTextOnFifthFrag.setText("");
     }
 
     /**
