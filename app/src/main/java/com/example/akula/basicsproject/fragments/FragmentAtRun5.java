@@ -38,7 +38,7 @@ public class FragmentAtRun5 extends BaseFragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String message = editText.getText().toString();
+                String message = editTextOnFifthFrag.getText().toString();
                 listener.onMessageRead(message);
 
             }
