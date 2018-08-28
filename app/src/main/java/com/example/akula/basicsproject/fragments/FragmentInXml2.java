@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 
 import com.example.akula.basicsproject.R;
 
-public class Fragment2 extends Fragment {
+public class FragmentInXml2 extends Fragment {
 
 
     @Nullable

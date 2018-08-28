@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.akula.basicsproject.R;
 
-public class Fragment1 extends Fragment {
+public class FragmentInXml1 extends Fragment {
 
     @Nullable
     @Override
