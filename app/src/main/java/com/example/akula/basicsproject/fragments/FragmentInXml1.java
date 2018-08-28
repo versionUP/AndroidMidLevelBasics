@@ -8,15 +8,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.akula.basicsproject.Common.BaseFragment;
 import com.example.akula.basicsproject.R;
 
-public class FragmentInXml1 extends Fragment {
+public class FragmentInXml1 extends BaseFragment {
 
-    @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
-      View view  = inflater.inflate(R.layout.fragment1_layout,container,false);
-        return view;
+    protected View onInflateFragmentLayout(LayoutInflater inflater, ViewGroup container) {
+        return inflater.inflate(R.layout.fragment1_layout,container,false);
     }
 }

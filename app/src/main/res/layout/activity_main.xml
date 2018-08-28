@@ -6,27 +6,37 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Activities.MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/long_click_showcase"
+        android:layout_centerInParent="true"/>
 
     <Button
         android:id="@+id/button_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fragments_xml" />
+        android:text="Fragments_xml"
+        android:tooltipText="have the code to add fragment via XML"/>
 
     <Button
         android:id="@+id/button_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fragments_Runtime(add/replace)" />
+        android:text="Fragments_Runtime(add/replace)"
+        android:tooltipText="have the code to add fragment during RunTime"/>
     <Button
         android:id="@+id/button_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FragmentToActivity_communication" />
+        android:text="FragmentToActivity_communication"
+        android:tooltipText="have the code to communicate from fragment to activity"/>
     <Button
         android:id="@+id/button_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FragmentToFragment_communication" />
+        android:text="FragmentToFragment_communication"
+        android:tooltipText="have the code to communicate from fragment to fragment"/>
 
 </LinearLayout>
