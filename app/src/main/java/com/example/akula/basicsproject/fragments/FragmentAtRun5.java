@@ -15,45 +15,25 @@ import android.widget.EditText;
 import com.example.akula.basicsproject.Common.BaseFragment;
 import com.example.akula.basicsproject.R;
 
-
 public class FragmentAtRun5 extends BaseFragment {
 
-    private  EditText editText;
+    private  EditText editTextOnFifthFrag;
     private onMessageReadListener listener;
 
     public interface onMessageReadListener {
          void onMessageRead(String message);
 
     }
-
-
-
     public FragmentAtRun5() {
         // Required empty public constructor
     }
 
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View view =  inflater.inflate(R.layout.fragment_fragment_at_run5, container, false);
-        editText = (EditText)view.findViewById(R.id.editTextInFifthhFrag);
-        Button button =(Button)view.findViewById(R.id.buttonInFifthFrag);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String message = editText.getText().toString();
-                listener.onMessageRead(message);
-
-            }
-        });
-        return view;
-    }
-
+ 
     @Override
     protected View onInflateFragmentLayout(LayoutInflater inflater, ViewGroup container) {
 
         _rootView = inflater.inflate(R.layout.fragment_fragment_at_run5, container, false);
-        editText = (EditText)_rootView.findViewById(R.id.editTextInFifthhFrag);
+        editTextOnFifthFrag = (EditText)_rootView.findViewById(R.id.editTextInFifthhFrag);
         Button button =(Button)_rootView.findViewById(R.id.buttonInFifthFrag);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,6 +64,6 @@ public class FragmentAtRun5 extends BaseFragment {
     @Override
     public void onResume() {
         super.onResume();
-       editText.setText("");
+       editTextOnFifthFrag.setText("");
     }
 }
