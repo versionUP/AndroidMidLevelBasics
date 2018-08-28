@@ -31,7 +31,8 @@
         android:text="ButtonAtRun2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewRun2" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewRun2"
+        android:tooltipText="button to navigate to replace with 3rd fragment"/>
 
 
 </android.support.constraint.ConstraintLayout>
