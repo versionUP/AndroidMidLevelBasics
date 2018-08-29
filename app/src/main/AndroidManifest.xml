@@ -22,7 +22,11 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Activities.Main3Activity" />
         <activity android:name=".Activities.Main4Activity" />
-        <activity android:name=".Activities.Main5Activity"></activity>
+        <activity android:name=".Activities.Main5Activity" />
+        <activity
+            android:name=".Activities.Main6Activity"
+            android:label="@string/title_activity_main6"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

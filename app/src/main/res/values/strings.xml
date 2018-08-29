@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">BasicsProject</string>
     <string name="title_activity_main2">Main2Activity</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="long_click_showcase">Long click on each button to see what it showcase</string>
+    <string name="fragmentvia_xml">FragmentVia_XML ></string>
+    <string name="fragments_runtime">Fragments_At_Runtime ></string>
+    <string name="fragmentto_activity_communication">Fragment_To_Activity_Communication ></string>
+    <string name="fragmentto_fragment_communication">Fragment_To_fragment_Communication ></string>
+    <string name="app_toolbar_update">App/Toolbar update</string>
+    <string name="title_activity_main6">Main6Activity</string>
 </resources>

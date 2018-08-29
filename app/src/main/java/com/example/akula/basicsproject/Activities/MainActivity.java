@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         button3.setOnClickListener(this);
         Button button4 = findViewById(R.id.button_4);
         button4.setOnClickListener(this);
+        Button button5 = findViewById(R.id.button_5);
+        button5.setOnClickListener(this);
 
     }
 
@@ -44,6 +46,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
              case R.id.button_4:
                 Intent intent4 = new Intent(this, Main5Activity.class);
                 startActivity(intent4);
+                break;
+             case R.id.button_5:
+                Intent intent5 = new Intent(this, Main6Activity.class);
+                startActivity(intent5);
                 break;
         }
     }

@@ -1,47 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Activities.MainActivity">
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_margin="10dp"
-        android:padding="5dp"
-        android:background="@drawable/rectangle_black"
-        android:text="@string/long_click_showcase"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:textColor="@color/colorPrimaryDark"/>
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button1"
-        android:tooltipText="have the code to add fragment via XML"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangle_black"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/long_click_showcase"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
 
-    <Button
-        android:id="@+id/button_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button1"
-        android:tooltipText="have the code to add fragment during RunTime"/>
-    <Button
-        android:id="@+id/button_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button1"
-        android:tooltipText="have the code to communicate from fragment to activity"/>
-    <Button
-        android:id="@+id/button_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button1"
-        android:tooltipText="have the code to communicate from fragment to fragment"/>
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
+            android:text="@string/fragmentvia_xml"
+            android:tooltipText="have the code to add fragment via XML"
+            tools:targetApi="o" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
+            android:text="@string/fragments_runtime"
+            android:tooltipText="have the code to add/replace fragment during RunTime"
+            tools:targetApi="o" />
+
+        <Button
+            android:id="@+id/button_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
+            android:text="@string/fragmentto_activity_communication"
+            android:tooltipText="have the code to communicate from fragment to activity"
+            tools:targetApi="o" />
+
+        <Button
+            android:id="@+id/button_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
+            android:text="@string/fragmentto_fragment_communication"
+            android:tooltipText="have the code to communicate from fragment to fragment"
+            tools:targetApi="o" />
+        <Button
+            android:id="@+id/button_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
+            android:text="@string/app_toolbar_update"
+            android:tooltipText="have the code to customize App/Tool bar"
+            tools:targetApi="o" />
+    </LinearLayout>
+
+</ScrollView>
